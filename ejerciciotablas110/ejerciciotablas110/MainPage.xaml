@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ejerciciotablas110.MainPage">
+    
+    <Grid RowDefinitions="Auto,Auto,*" Padding="20" RowSpacing="15">
+
+            <Label Grid.Row="0"
+               Text="Tablas de Multiplicar"
+               FontSize="26"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+            <HorizontalStackLayout Grid.Row="1"
+                                Spacing="10"
+                                HorizontalOptions="Center">
+                <Label Text="Selecciona una tabla:"
+                   VerticalOptions="Center"
+                   FontSize="16" />
+
+                <Picker x:Name="PickerTabla"
+                    WidthRequest="100"
+                    SelectedIndexChanged="PickerTabla_SelectedIndexChanged" />
+            </HorizontalStackLayout>
+
+            <ScrollView Grid.Row="2">
+                <CollectionView x:Name="CvResultados"
+                             ItemsSource="{Binding}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Label Text="{Binding}"
+                               FontSize="20"
+                               Padding="5" />
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </ScrollView>
+
+        </Grid>
+    </ContentPage>

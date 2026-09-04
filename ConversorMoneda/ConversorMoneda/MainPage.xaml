@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConversorMoneda.MainPage"
+             BackgroundColor="#F4F6F9">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="20" VerticalOptions="Center">
+
+            <!-- Título principal -->
+            <Label Text="Conversor de Divisas"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   TextColor="#1E293B"
+                   HorizontalOptions="Center" />
+
+            <Label Text="Calcula cuántos dólares puedes adquirir"
+                   FontSize="14"
+                   TextColor="#64748B"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,10" />
+
+            <!-- Tarjeta con los campos de entrada -->
+            <Border StrokeShape="RoundRectangle 12"
+                    StrokeThickness="0"
+                    BackgroundColor="White"
+                    Padding="20">
+                <VerticalStackLayout Spacing="15">
+
+                    <!-- Entrada: Pesos Mexicanos -->
+                    <Label Text="Monto en Pesos Mexicanos (MXN):"
+                           TextColor="#334155"
+                           FontAttributes="Bold" />
+                    <Entry x:Name="TxtPesos"
+                           Placeholder="Ej. 5000"
+                           Keyboard="Numeric"
+                           TextColor="#0F172A" />
+
+                    <!-- Entrada: Tipo de cambio -->
+                    <Label Text="Tipo de Cambio (MXN por 1 USD):"
+                           TextColor="#334155"
+                           FontAttributes="Bold" />
+                    <Entry x:Name="TxtTipoCambio"
+                           Placeholder="Ej. 18.50"
+                           Keyboard="Numeric"
+                           TextColor="#0F172A" />
+
+                    <!-- Botón de cálculo -->
+                    <Button Text="Calcular Dólares"
+                            BackgroundColor="#2563EB"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            CornerRadius="8"
+                            Margin="0,10,0,0"
+                            Clicked="OnCalcularClicked" />
+
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Tarjeta de Resultado -->
+            <Border StrokeShape="RoundRectangle 12"
+                    StrokeThickness="0"
+                    BackgroundColor="#EFF6FF"
+                    Padding="20">
+                <VerticalStackLayout Spacing="5" HorizontalOptions="Center">
+                    <Label Text="Total en Dólares (USD):"
+                           FontSize="14"
+                           TextColor="#1E40AF"
+                           HorizontalOptions="Center" />
+                    <Label x:Name="LblResultado"
+                           Text="$0.00 USD"
+                           FontSize="32"
+                           FontAttributes="Bold"
+                           TextColor="#1D4ED8"
+                           HorizontalOptions="Center" />
+                </VerticalStackLayout>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

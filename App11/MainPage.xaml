@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NumerosPares.MainPage"
+             BackgroundColor="#F0EDF7">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="24,40,24,40"
+            Spacing="0"
+            VerticalOptions="Fill">
+
+            <!-- Encabezado con gradiente -->
+            <Grid
+                Padding="30,40,30,35"
+                BackgroundColor="#512BD4">
+                <VerticalStackLayout Spacing="8" HorizontalOptions="Center">
+                    <Label
+                        Text="&#x267E;"
+                        FontSize="40"
+                        HorizontalOptions="Center"
+                        TextColor="White"/>
+                    <Label
+                        Text="NÚMEROS PARES"
+                        FontSize="26"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        TextColor="White"/>
+                    <Label
+                        Text="Del 0 al 100"
+                        FontSize="16"
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        TextColor="#C4B5F2"/>
+                </VerticalStackLayout>
+            </Grid>
+
+            <!-- Tarjeta principal -->
+            <Frame
+                Margin="20,-20,20,0"
+                Padding="24"
+                CornerRadius="16"
+                BackgroundColor="White"
+                HasShadow="True"
+                BorderColor="Transparent">
+
+                <VerticalStackLayout Spacing="20">
+
+                    <!-- Botón -->
+                    <Button
+                        Text="  MOSTRAR NÚMEROS PARES  "
+                        Clicked="MostrarPares_Clicked"
+                        BackgroundColor="#512BD4"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        FontSize="16"
+                        CornerRadius="12"
+                        HeightRequest="54"
+                        HorizontalOptions="Fill"/>
+
+                    <!-- Separador -->
+                    <BoxView
+                        HeightRequest="1"
+                        Color="#E8E4F0"
+                        HorizontalOptions="Fill"/>
+
+                    <!-- Etiqueta de resultado -->
+                    <Label
+                        Text="Resultado"
+                        FontSize="12"
+                        FontAttributes="Bold"
+                        TextColor="#9B8DC2"
+                        HorizontalOptions="Start"
+                        CharacterSpacing="1.5"/>
+
+                    <!-- Contenedor del resultado -->
+                    <Border
+                        StrokeShape="RoundRectangle 12"
+                        Stroke="#E8E4F0"
+                        StrokeThickness="1.5"
+                        BackgroundColor="#F9F7FC"
+                        Padding="16"
+                        MinimumHeightRequest="80">
+
+                        <Label
+                            x:Name="lblNumeros"
+                            Text="Presiona el botón para generar los números pares"
+                            FontSize="16"
+                            TextColor="#6B5B8A"
+                            HorizontalTextAlignment="Center"
+                            VerticalTextAlignment="Center"
+                            LineBreakMode="WordWrap"/>
+
+                    </Border>
+
+                </VerticalStackLayout>
+
+            </Frame>
+
+            <!-- Pie de página -->
+            <Label
+                Text="Práctica 10 — .NET MAUI"
+                FontSize="11"
+                TextColor="#A99CC8"
+                HorizontalOptions="Center"
+                Margin="0,30,0,20"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

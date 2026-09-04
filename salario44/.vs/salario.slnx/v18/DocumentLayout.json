@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Aaron\\Documents\\Prof_Arcides\\Modulo3\\App4\\salario\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3B1D5670-AF59-AEFE-8363-BBD9DB8A7AD4}|salario\\salario.csproj|c:\\users\\aaron\\documents\\prof_arcides\\modulo3\\app4\\salario\\salario\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B1D5670-AF59-AEFE-8363-BBD9DB8A7AD4}|salario\\salario.csproj|solutionrelative:salario\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B1D5670-AF59-AEFE-8363-BBD9DB8A7AD4}|salario\\salario.csproj|c:\\users\\aaron\\documents\\prof_arcides\\modulo3\\app4\\salario\\salario\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3B1D5670-AF59-AEFE-8363-BBD9DB8A7AD4}|salario\\salario.csproj|solutionrelative:salario\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Aaron\\Documents\\Prof_Arcides\\Modulo3\\App4\\salario\\salario\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "salario\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Aaron\\Documents\\Prof_Arcides\\Modulo3\\App4\\salario\\salario\\MainPage.xaml.cs",
+              "RelativeToolTip": "salario\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA5wBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T06:14:04.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Aaron\\Documents\\Prof_Arcides\\Modulo3\\App4\\salario\\salario\\MainPage.xaml",
+              "RelativeDocumentMoniker": "salario\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\Aaron\\Documents\\Prof_Arcides\\Modulo3\\App4\\salario\\salario\\MainPage.xaml",
+              "RelativeToolTip": "salario\\MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-09-01T06:13:18.453Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
